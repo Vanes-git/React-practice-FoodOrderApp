@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../../store/cart-context";
+import Checkout from './Checkout';
 
 import classes from "./Cart.module.css";
 
@@ -42,6 +43,7 @@ const Cart = (props) => {
                 <span>Total Amount</span>
                 <span>{totalAmount}</span>
             </div>
+            <Checkout/>
             <div className={classes.actions}>
                 <button
                     className={classes["button--alt"]}
